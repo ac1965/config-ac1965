@@ -93,7 +93,7 @@ def decisor(url):
 
 	else:
 		#@dest = '/opt/malware/unsorted/'+filetype
-		dest = '/home/tjy/MEGA/malware/unsorted/'+filetype
+		dest = '/home/tjy/malware/unsorted/'+filetype
 		fpath = dest+'/'+str(md5)
 
 		if not os.path.exists(dest):
