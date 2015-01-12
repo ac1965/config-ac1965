@@ -1,0 +1,26 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Wine\Fonts\Replacements]
+"MS Gothic"="RictyƒSƒVƒbƒN"
+"MS Mincho"="Ricty–¾’©"
+"MS PGothic"="Ricty PƒSƒVƒbƒN"
+"MS PMincho"="Ricty P–¾’©"
+"MS UI Gothic"="RictyExƒSƒVƒbƒN"
+"‚l‚r ƒSƒVƒbƒN"="RictyƒSƒVƒbƒN"
+"‚l‚r –¾’©"="Ricty–¾’©"
+"‚l‚r ‚oƒSƒVƒbƒN"="Ricty PƒSƒVƒbƒN"
+"‚l‚r ‚o–¾’©"="Ricty P–¾’©"
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink]
+"Lucida Sans Unicode"=hex(7):69,70,61,67,75,69,2d,6d,6f,6e,61,2e,74,74,66,2c,\
+  49,50,41,20,83,82,83,69,81,5b,20,55,49,83,53,83,56,83,62,83,4e,00,00
+"Microsoft Sans Serif"=hex(7):69,70,61,67,75,69,2d,6d,6f,6e,61,2e,74,74,66,2c,\
+  49,50,41,20,83,82,83,69,81,5b,20,55,49,83,53,83,56,83,62,83,4e,00,00
+"Tahoma"=hex(7):69,70,61,67,75,69,2d,6d,6f,6e,61,2e,74,74,66,2c,\
+  49,50,41,20,83,82,83,69,81,5b,20,55,49,83,53,83,56,83,62,83,4e,00,00
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\FontSubstitutes]
+"Tahoma"="MS UI Gothic"
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\FontSubstitutes]
+"MS Sans Serif"="MS UI Gothic"

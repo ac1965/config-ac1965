@@ -1,0 +1,16 @@
+# /etc/fstab: static file system information.
+#
+# The root filesystem should have a pass number of either 0 or 1.
+# All other filesystems should have a pass number of 0 or greater than 1.
+#
+# NOTE: If your BOOT partition is ReiserFS, add the notail option to opts.
+#
+# See the manpage fstab(5) for more information.
+#
+# <fs>			<mountpoint>	<type>		<opts>		<dump/pass>
+
+UUID="f5d1ea87-cbf1-4d66-a605-f56681c60e20"	/boot		ext3		noauto,noatime	1 2
+UUID="33a7112b-53d1-46a0-9d9a-c670533e9f73"	none		swap		sw		0 0
+UUID="778b44d1-0cd0-4976-a3a7-20db6af96bb8"	/		ext4		noatime		0 1
+/dev/cdrom		/mnt/cdrom	auto		noauto,ro	0 0
+

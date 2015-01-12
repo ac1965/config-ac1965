@@ -1,0 +1,37 @@
+#!/bin/sh
+exec tail -n +3 $0
+# This file provides an easy way to add custom menu entries.  Simply type the
+# menu entries you want to add after this comment.  Be careful not to change
+# the 'exec tail' line above.
+
+menuentry 'my Arch GNU/Linux 2014.09.27 : x86_64 iso' {
+	load_video
+	set gfxpayload=keep
+	set isofile='/iso/my-arch-2014.09.28-dual.iso'
+	set dev_uuid='5bd9fcb6-9fef-4796-8076-1bd2b25c411b'
+	set arch='x86_64'
+	set isolabel='MY_ARCH_201409'
+	loopback loop $isofile
+	linux (loop)/arch/boot/$arch/vmlinuz archisolabel=$isolabel img_dev=/dev/disk/by-uuid/$dev_uuid img_loop=$isofile earlymodules=loop
+	initrd (loop)/arch/boot/$arch/archiso.img
+}
+
+#menuentry 'Pentoo : x86_64 iso' {
+#	load_video
+#	set gfxpayload=keep
+#	set isofile='/iso/pentoo-x86_64-2012.0_beta1.7.iso'
+#	loopback loop $isofile
+#	linux (loop)/boot/pentoo root=/dev/ram0 init=/linuxrc nokeymap \
+#	    cdroot cdboot looptype=squashfs loop=/image.squashfs \
+#	    vga=791 usbcore.autosuspend=1 console=tty0 rootdelay=10 isoboot=$isofile
+#	initrd (loop)/boot/pentoo.igz
+#}
+ 
+#menuentry 'BT5R2-GNOME : x86_64 iso' {
+#	load_video
+#	set gfxpayload=keep
+#	set isofile='/iso/BT5R2-GNOME-64.iso'
+#	loopback loop $isofile
+#	linux (loop)/casper/vmlinuz boot=casper iso-scan/filename=/$isofile noeject noprompt splash --
+#	initrd (loop)/casper/initrd.gz
+#}

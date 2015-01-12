@@ -1,0 +1,91 @@
+! font settings --------------------------------------------------------------
+
+Xft.autohint: true
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.dpi: 96
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+
+!-------------------------------------------------------------------------------
+! Colors
+
+*background: #181818
+*foreground: #c0c0c0
+*cursorColor: #93a1a1
+
+!! black dark/light
+*color0: #121212
+*color8: #2e3436
+
+!! red dark/light
+*color1: #a35b66
+*color9: #ab6b74
+
+!! green dark/light
+*color2: #99ab6f
+*color10: #acb972
+
+!! yellow dark/light
+*color3: #ca9733
+*color11: #ccaa69
+
+!! blue dark/light
+*color4: #495d6e
+*color12: #687987
+
+!! magenta dark/light
+*color5: #825969
+*color13: #977381
+
+!! cyan dark/light
+*color6: #839191
+*color14: #98a4a4
+
+!! white dark/light
+*color7: #e0e0e0
+color15: #e5e5e5
+
+! fadeout rxvt if outfocus
+rxvt.fading: 30
+
+! input with IM at cursor position
+rxvt.preeditType: OverTheSpot
+
+! urxvt settings --------------------------------------------------------------
+URxvt*transparent:          true
+URxvt*shading:              30
+
+URxvt*scrollBar:            false
+URxvt.font: xft:inconsolata:size=11:antialias=true:autohint=false,\
+            xft:Takao Gothic:size=11:antialias=true:autohint=false
+URxvt.letterSpace:          -2
+URxvt*saveLines:            20000
+URxvt*cursorUnderline:      false
+URxvt*cursorBlink:          true
+
+URxvt.perl-lib:/usr/lib/uxvt/perl/
+URxvt.perl-ext-common: default,keyboard-select,url-select,clipboard 
+
+URxvt.keysym.M-Escape: perl:keyboard-select:activate 
+
+URxvt.keysym.M-s: perl:keyboard-select:search 
+
+URxvt.keysym.M-u: perl:url-select:select_next 
+! Alt+u  Enter selection mode. The last URL on your screen will be selected.
+!        You can repeat Alt+u to select the next upward URL.
+! k      Select next upward URL
+! j      Select next downward URL
+! Return Open selected URL in browser and quit selection mode
+! o      Open selected URL in browser without quitting selection mode
+! y      Copy (yank) selected URL and quit selection mode
+! Esc    Cancel URL selection mode
+
+URxvt.url-select.button:2 
+URxvt.url-select.launcher:/usr/bin/xdg-open
+URxvt.url-select.underline:true 
+
+URxvt.keysym.C-w: perl:clipboard:copy 
+URxvt.keysym.C-y: perl:clipboard:paste 
+URxvt.keysym.M-C-y: perl:clipboard:paste_escaped 

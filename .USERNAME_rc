@@ -1,0 +1,12 @@
+#! /bin/bash
+
+test -d $HOME/go || mkdir -p $HOME/go
+
+export ARM_CROSS_PATH="~/android/android-toolchain-eabi/bin"
+export CROSS_COMPILE="${ARM_CROSS_PATH}/arm-eabi-"
+export ANDROID_JAVA_HOME=$JAVA_HOME
+export GOPATH=~/go
+
+export TMPDIR=/var/tmp
+
+export PATH=~/.cask/bin:~/.script:~/script:~/.bin:~/bin:~/go/bin:$PATH:$ARM_CROSS_PATH

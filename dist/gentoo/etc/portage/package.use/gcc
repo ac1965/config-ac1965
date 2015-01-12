@@ -1,0 +1,4 @@
+sys-devel/gcc gtk
+sys-devel/ct-ng bash-completion
+sys-devel/gcc multilib
+sys-devel/gcc graphite

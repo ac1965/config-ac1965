@@ -1,0 +1,2 @@
+mail-client/mutt gnutls gpg imap pop sidebar smime
+mail-client/mutt smtp

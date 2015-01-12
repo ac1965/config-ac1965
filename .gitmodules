@@ -1,0 +1,6 @@
+[submodule ".cask"]
+	path = .cask
+	url = https://github.com/cask/cask.git
+[submodule ".i3/i3status"]
+	path = .i3/i3status
+	url = https://github.com/Gravemind/i3status.git

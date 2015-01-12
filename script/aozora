@@ -1,0 +1,14 @@
+#! /bin/sh
+
+APPS=$HOME/air-apps
+appname=${1:-AirZoshi}
+
+abort () {
+	echo $1
+	exit 1
+}
+
+test -d ${APPS} || abort "Directory $APPS not found."
+test -f ${APPS}/${appname}  || abort "Application $appname not found."
+
+adl -nodebug ${APPS}/${appname}/META-INF/AIR/application.xml ${APPS}/${appname} >/dev/null 2>&1
