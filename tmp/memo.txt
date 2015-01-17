@@ -1,0 +1,17 @@
+# deamon start
+systemctl --user enable mpd
+systemctl --user enable megafuse
+systemctl --user start  mpd
+systemctl --user start  megafuse
+
+# private file
+cp ~/archive/ac1965/config-ac1965/private.tar.xv.enc ~/.
+decrypt private.tar.xv.enc | tar xvfJ -
+cd ~/.ssh
+decrypt keys.tar.xz.enc | tar xvfJ -
+
+# archlinux installed packages
+pac.sh
+
+# group join
+for g in kvm vboxusers wireshark cuckoo; do gpasswd -a tjy $g; done
