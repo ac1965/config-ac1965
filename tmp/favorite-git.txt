@@ -31,3 +31,6 @@ git://github.com:ac1965/vagrant-boxes.git
 https://github.com/quarkslab/irma-ansible
 https://github.com/jedi4ever/veewee.git
 https://github.com/guelfoweb/peframe.git
+https://github.com/buffer/thug.git
+https://github.com/UserTaken/docker-archlinux-pentest-lxde.git
+https://github.com/websecurify/node-vortex.git
