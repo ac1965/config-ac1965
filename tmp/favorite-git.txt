@@ -1,5 +1,6 @@
 git@github.com:ac1965/config-ac1965.git
 git@github.com:ac1965/my_archassault-iso.git
+git@github.com:ac1965/cuckoo-vagrant.git
 https://github.com/ArchAssault-Project/archassault-iso.git
 https://github.com/ArchAssault-Project/archassault.git
 https://github.com/JonathanSalwan/Kaminou-Kernel.git
@@ -34,3 +35,4 @@ https://github.com/guelfoweb/peframe.git
 https://github.com/buffer/thug.git
 https://github.com/UserTaken/docker-archlinux-pentest-lxde.git
 https://github.com/websecurify/node-vortex.git
+https://github.com/mwrock/boxstarter.git

@@ -15,3 +15,6 @@
 # If you want to use XFCE config tools...
 #
 #xfce-mcs-manager &
+
+test -f ~/.fehbg && ~/.fehbg || feh  --bg-scale '/home/tjy/.wallpaper/iland.jpg'
+lxterminal
