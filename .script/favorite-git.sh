@@ -22,6 +22,6 @@ do
     echo -- $u -- $p -- $r
     test -d $p || install -d $p
     cd $p 
-    (test -d $r/.git && git pull || git clone $u) >/dev/null 2>&1
+    (test -d $r/.git && (cd $r; git pull) || git clone $u) >/dev/null 2>&1
     cd - > /dev/null
 done
