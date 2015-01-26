@@ -36,3 +36,4 @@ https://github.com/buffer/thug.git
 https://github.com/UserTaken/docker-archlinux-pentest-lxde.git
 https://github.com/websecurify/node-vortex.git
 https://github.com/mwrock/boxstarter.git
+https://github.com/Sliim/pentest-env.git
