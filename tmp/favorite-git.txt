@@ -37,3 +37,5 @@ https://github.com/UserTaken/docker-archlinux-pentest-lxde.git
 https://github.com/websecurify/node-vortex.git
 https://github.com/mwrock/boxstarter.git
 https://github.com/Sliim/pentest-env.git
+https://github.com/Arachni/arachni.git
+https://github.com/BlackArch/blackarch.git
