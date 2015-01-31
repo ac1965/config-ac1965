@@ -1,4 +1,0 @@
-x11-terms/rxvt-unicode secondary-wheel afterimage truetype unicode3 256-color -vanilla
-x11-terms/rxvt-unicode xft
-x11-terms/rxvt-unicode pixbuf
->=x11-terms/rxvt-unicode-9.15-r1 -perl
