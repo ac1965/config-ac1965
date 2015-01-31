@@ -17,4 +17,5 @@
 #xfce-mcs-manager &
 
 test -f ~/.fehbg && ~/.fehbg || feh  --bg-scale '/home/tjy/.wallpaper/iland.jpg'
-lxterminal
+tint2 &
+lxterminal &
