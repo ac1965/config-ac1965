@@ -39,3 +39,7 @@ https://github.com/mwrock/boxstarter.git
 https://github.com/Sliim/pentest-env.git
 https://github.com/Arachni/arachni.git
 https://github.com/BlackArch/blackarch.git
+https://github.com/garethr/garethr-wackopicko.git
+https://github.com/p00gz/vagrant-pentester.git
+https://github.com/MidwestHackerSchool/dotfiles.git
+https://github.com/ikoniaris/dionaea-vagrant.git
